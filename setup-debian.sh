@@ -17,6 +17,11 @@ ln -s ~/dotfiles/.zshrc-deb ~/.zshrc
 ln -s ~/dotfiles/.nanorc-deb ~/.nanorc
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
+#Get current username
+username="$(whoami)"
+#Link nano prefs in root profile for sudo nano use
+sudo ln -sf /home/$username/dotfiles/.nanorc-deb /root/.nanorc
+
 #Remind to run source .zshrc
 echo "Completed, run 'source ~/.zshrc' to apply changes"
 
