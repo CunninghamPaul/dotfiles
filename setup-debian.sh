@@ -17,3 +17,6 @@ ln -s ~/dotfiles/.zshrc-deb ~/.zshrc
 ln -s ~/dotfiles/.nanorc-deb ~/.nanorc
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
+#Remind to run source .zshrc
+echo "Completed, run 'source ~/.zshrc' to apply changes"
+
