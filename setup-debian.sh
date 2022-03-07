@@ -8,7 +8,6 @@ for i in ~/.zshrc ~/.nanorc ~/.tmux.conf
 do
     if test -f $i; then
         mv $i $i.dfbak
-        echo $i
     fi
 done
 
