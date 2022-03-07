@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Setup dotfiles for Debian based Linux
-#Requires oh-my-zsh and plugins see install-ohmy-deb.sh
+#Requires oh-my-zsh and plugins see install-ohmyzsh-deb.sh
 
 #Backup any existing dotfiles
 for i in ~/.zshrc ~/.nanorc ~/.tmux.conf
