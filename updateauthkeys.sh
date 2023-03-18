@@ -2,7 +2,7 @@
 
 me="$(whoami)"
 
-read -r -p "Are you sure you want to overwrite authorized_keys for ${me} ? y/n" choice
+read -r -p "Are you sure you want to overwrite authorized_keys for ${me}? y/n " choice
 
 case $choice in
       [yY])
