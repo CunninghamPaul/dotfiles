@@ -1,23 +1,24 @@
 #!/bin/bash
 
 me="$(whoami)"
+sshdir="$HOME/.ssh"
 
 read -r -p "Are you sure you want to overwrite authorized_keys for ${me}? y/n " choice
 
 case $choice in
       [yY])
-            echo "Updating ~/.ssh/authorized_keys for user ${me}"
+            echo "Updating $sshdir/authorized_keys for user ${me}"
 
-            if [ ! -d "~/.ssh" ]; then
-                echo "~/.ssh Does not exist. Creating directory"
-                mkdir ~/.ssh
-                chmod 700 ~/.ssh
+            if [ ! -d $sshdir ]; then
+                echo "$sshdir Does not exist. Creating directory"
+                mkdir $sshdir
+                chmod 700 $sshdir
             fi
 
-            if [ -d "~/.ssh" ]; then
-                cat pubkeys > ~/.ssh/authorized_keys
+            if [ -d $sshdir ]; then
+                cat pubkeys > $sshdir/authorized_keys
             else
-                echo "Error ~/.ssh directory not found"
+                echo "Error $sshdir directory not found"
             fi
             ;;
       [nN])
