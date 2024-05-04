@@ -22,5 +22,5 @@ username="$(whoami)"
 sudo ln -sf /home/$username/dotfiles/.nanorc-deb /root/.nanorc
 
 #run source .zshrc
-source ~/.zshrc
+zsh source ~/.zshrc
 
