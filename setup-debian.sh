@@ -21,6 +21,8 @@ username="$(whoami)"
 #Link nano prefs in root profile for sudo nano use
 sudo ln -sf /home/$username/dotfiles/.nanorc-deb /root/.nanorc
 
-#run source .zshrc
-zsh source ~/.zshrc
+#cant run source .zshrc as this is running under bash
+#remind to run source
+echo "run the below command to apply preferences"
+echo "source ~/.zshrc"
 
