@@ -109,3 +109,10 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 alias nano=/opt/homebrew/bin/nano
 
 export EDITOR=nano
+
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/paulcunningham/.lmstudio/bin"
+# End of LM Studio CLI section
+
