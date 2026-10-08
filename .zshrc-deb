@@ -104,3 +104,8 @@ PROMPT=$'%F{%(#.blue.green)}┌──(%B%F{%(#.red.yellow)}%n'' @ '$'%m%b%F{%(#.
 
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Automatically attach to a named tmux session on SSH login
+if [[ -n "$SSH_TTY" && -z "$TMUX" && -o interactive ]]; then
+    tmux new-session -A -s main
+fi
