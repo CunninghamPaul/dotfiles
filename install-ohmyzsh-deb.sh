@@ -5,6 +5,9 @@
 sudo apt update
 sudo apt install zsh zsh-common zsh-autosuggestions zsh-syntax-highlighting -y
 
+#Install other programs
+sudo apt install tmux wget curl
+
 #Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
